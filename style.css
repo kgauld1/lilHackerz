@@ -1,0 +1,122 @@
+body{
+	/* background-image: url("https://static.vecteezy.com/system/resources/thumbnails/000/540/953/small/Black_geometric_abstract_seamless_pattern_background_3.jpg"); */
+	background-color: rgb(26, 26, 26);
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+top {
+	width: 100%;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: row;
+}
+#about {
+	background: rgba(255, 255, 255, 0.05);
+	color: white;
+	width: 20%;
+	min-width: 15em;
+	height: 100%;
+	text-align: center;
+}
+#about p {
+	margin: 1.5vw;
+	font-size: 1.25em;
+	text-align: justify;
+	line-height: 4vh;
+}
+#about a {
+	color: white;
+}
+iframe {
+	flex-grow: 1;
+	height: 100%;
+	border: none;
+}
+#lil-hackerz {
+	width: 100%;
+	height: 20%;
+	min-height: 15em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.2);
+}
+.maker {
+	text-align: center;
+}
+.maker img {
+	width: 8em;
+  height: 8em;
+	border-radius: 50%;
+  object-fit: cover;
+}
+.maker a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.5em;
+}
+.maker p {
+	margin: 0;
+}
+
+@media(orientation: portrait) {
+	body{
+		display: block;
+		/* width: 100vw; */
+		height: auto;
+		margin: 0;
+		padding: 0;
+		position: static;
+	}
+	iframe {
+		flex-grow: 0;
+		height: 45vh;
+	}
+	top {
+		width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+		padding: 0;
+		background: rgba(255, 255, 255, 0.3);
+		margin: 0;
+	}
+	#about {
+		background: rgba(255, 255, 255, 0.05);
+		color: white;
+		width: 100%;
+		min-width: 0;
+		text-align: center;
+	}
+	iframe {
+		flex-grow: 0;
+		width: 100%;
+	}
+	#lil-hackerz {
+		width: 100%;
+		padding: 1em 0;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		align-items: auto;
+	}
+	.maker {
+		margin-bottom: 1em;
+	}
+	.maker img {
+		width: 34vw;
+		height: 34vw;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+}
+
+.vibe {
+	display: block;
+	cursor: pointer;
+	margin: 0.5em;
+}
